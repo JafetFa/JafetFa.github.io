@@ -955,6 +955,11 @@
             .mobile-menu-btn {
                 display: flex;
             }
+
+            .whatsapp-btn {
+                border-radius: 10px;
+                padding: 14px 20px;
+            }
             
             .hero-content {
                 grid-template-columns: 1fr;
@@ -1245,28 +1250,10 @@
         </nav>
 
         <div class="mobile-menu-footer">
-            <a href="https://wa.me/5211234567890?text=Hola,%20estoy%20interesado%20en%20contactarte" class="btn-whatsapp" style="
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    padding: 12px 24px;
-                    background-color: #25D366; /* Color verde de WhatsApp */
-                    color: white;
-                    text-decoration: none;
-                    border-radius: 8px;
-                    font-weight: 600;
-                    font-size: 1rem;
-                    transition: all 0.3s ease;
-                    border: none;
-                    cursor: pointer;
-                    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-                    gap: 8px;
-                " onmouseover="this.style.opacity='0.9'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.3)'"
-                onmouseout="this.style.opacity='1'; this.style.boxShadow='0 2px 5px rgba(0,0,0,0.2)'">
-                <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i>
-                <span>Contactar por WhatsApp</span>
-            </a>
+            <a href="https://wa.me/5211234567890?text=Hola,%20estoy%20interesado%20en%20contactarte" class="btn-primary" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>Contáctame por WhastApp</span>
+            </a>"
             <div style="margin-top: 1rem; text-align: center;">
                 <p style="font-size: 0.875rem; color: var(--secondary-600); margin-bottom: 0.5rem;">
                     ¿Listo para trabajar juntos?
@@ -1889,30 +1876,41 @@
                 </div>
 
                 <div class="contact-container" style="text-align: center; max-width: 500px; margin: 0 auto;">
-                    <!-- Texto con enlace a correo -->
-                    <p style="margin-bottom: 2rem; font-size: 1.1rem;">
-                        ¿Prefieres escribirme por email?
-                        <a href="mailto:efrac.moreno.07@gmail.com?subject=Consulta&body=Hola,%20me%20interesa%20contactarte"
-                            style="color: #0066cc; text-decoration: underline;">
-                            Haz clic aquí
-                        </a>
-                    </p>
-                
-                    <!-- Imagen con efecto hover -->
-                    <div class="hover-image" style="
-                            width: 200px;
-                            height: 200px;
-                            margin: 0 auto;
-                            border-radius: 50%;
-                            overflow: hidden;
-                            transition: all 0.3s ease;
-                            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                        " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.2)'"
-                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)'">
-                        <img src="https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg" alt="Contacto"
-                            style="width: 100%; height: 100%; object-fit: cover;" />
-                    </div>
-                </div>
+    <!-- Texto con enlace a correo -->
+    <p style="margin-bottom: 2rem; font-size: 1.1rem;">
+        ¿Prefieres escribirme por email? 
+        <a 
+            href="efrac.moreno.07@gmail.com?subject=Consulta&body=Hola,%20me%20interesa%20contactarte" 
+            style="color: #0066cc; text-decoration: underline;"
+        >
+            Haz clic aquí
+        </a>
+    </p>
+
+    <!-- Imagen con efecto hover -->
+    <div 
+        class="hover-image" 
+        style="
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        "
+        onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.2)'"
+        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.1)'"
+    >
+        <img 
+            src="https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg" 
+            alt="Contacto" 
+            style="width: 100%; height: 100%; object-fit: cover;"
+        />
+    </div>
+
+    
+</div>
             </div>
         </div>
     </section>
